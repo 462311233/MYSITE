@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我</title>
+    <link rel="stylesheet" href="about me cn h.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index cn h.html"><img src="image/logo.png" alt=""></a></div>
+        <ul class="nav-links">
+            <li><a href="index cn h.html">首页</a></li>
+            <li class="active"><a href="about me cn h.css" style="color: crimson;">关于我</a></li>
+            <li class="ctn"><a href="contact cn h.html">联系我</a></li>
+            <span>
+                <b style="color: whitesmoke;">中▼</b>
+                <ul class="lang">
+                    <li><a href="about me h.html">EN</a> </li>
+                    <li><a href="about me cn h.html">中</a></li>
+                </ul>
+            </span>
+            <div class="contrast"><a href="about me cn.html"><img src="image/白对比度.png" alt=""></a></div>
+
+        </ul>
+        <img src="image/menu.png" alt="" class="menu-btn">
+    </nav>
+
+
+
+    <header>
+        <div class="header-content">
+            <h2>关于我</h2>
+            <div class="line"></div>
+            <h1>个人信息</h1>
+            <h3>柳执谛 1997/07/30</h3>
+            <p style="text-align: center;opacity: 0.8;">我出生在中国。<br />我目前在卡拉拉美术学院的多媒体艺术专业学习，我喜欢摄影，我是Photoshop、Vscode等设计软件的专家。 我对平面设计有很大的兴趣，对设计有自己独特的见解。 本网站用于展示个人作品，喜欢我的可以联系我。</p>
+        </div>
+    </header>
+
+
+
+    <section class="events" style="margin-bottom: 150px;">
+        <div class="title">
+            <h1>我的技能</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="image/123.jpg" alt="">
+                <h4>摄影</h4>
+                <p>这些照片是在 2019 年夏天在中国云南重庆等地拍摄的，多数为手机拍摄。</p>
+                <a href="foto cn h.html" class="ctn">了解更多</a>
+            </div>
+            <div class="col">
+                <img src="image/1234.jpg" alt="">
+                <h4>海报设计</h4>
+                <p>平面设计作品，展示海报的制作理念和整体效果，属于非商业海报练习。</p>
+                <a href="poster cn h.html" class="ctn">了解更多</a>
+            </div>
+            <div class="col">
+                <img src="image/12345.jpg" alt="">
+                <h4>网页设计</h4>
+                <p>这部分是为国内外设品牌公司的网站设计，单纯的布局设计，展示整体效果。</p>
+                <a href="web design cn h.html" class="ctn">了解更多</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="tours" style="width: 80%;">
+        <div class="row" >
+            <div class="col content-col">
+                <H1>我的爱好 摄影&美食</H1>
+                <div class="line"></div>
+                <p>旅行和美食是这辈子最喜欢的两件事。 每一次旅行，食物都是必不可少的。 甚至，我也会踏上追求美食的旅程。 有很多关于旅行的回忆，总是离不开美食。</p>
+                
+                <div class="heart-btn">
+                    <div class="content">
+                      <span class="heart"></span>
+                      <span class="text">喜欢</span>
+                      <span class="numb"></span>
+                    </div>
+                  </div>
+                  <script>
+                    $(document).ready(function(){
+                      $('.content').click(function(){
+                        $('.content').toggleClass("heart-active")
+                        $('.text').toggleClass("heart-active")
+                        $('.numb').toggleClass("heart-active")
+                        $('.heart').toggleClass("heart-active")
+                      });
+                    });
+                  </script>
+                
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="image/5.jpg" alt="">
+                    <img src="image/2.jpg" alt="">
+                    <img src="image/3.jpg" alt="">
+                    <img src="image/4.jpg" alt="">
+                    <img src="image/6.jpg" alt="">
+                    <img src="image/7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <p>地址via nuova n. 14 54033, Carrara Massa, Toscana IT , 邮箱liuzhidi1997@gmail.com ,电话 +39 3465927726</p>
+        <p>2021  版权所有 | 柳执谛设计</p>
+    </section>
+        
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks =document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
+        

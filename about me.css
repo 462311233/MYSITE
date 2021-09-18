@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{
+    margin-left: 30px;
+    margin-right: 20px;
+    cursor: default;
+}
+span b{
+    font-size: 18px;
+    font-weight: 500;
+
+}
+span .lang{
+    display: none;
+    position: absolute;
+    top: 60%;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+span:hover .lang{
+    display: block;
+}
+span .lang a{
+    color: black;
+}
+span .lang a:hover{
+    color: whitesmoke;
+}
+span .lang li{
+    width: 80%;
+    height: 30px;
+    display: flex;
+}
+span .lang li:hover{
+    background-color: rgb(73, 52, 90);
+    color: whitesmoke;
+}
+
+.contrast{
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+ul{
+    list-style: none;
+}
+
+.active{
+    color: rgb(233, 0, 47);
+    text-decoration: underline;
+    font-weight: bold;
+}
+body , html{
+    overflow-x: hidden;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 30px;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: rgb(233, 0, 47);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(image/IMG_20180817_115244.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content h2{
+    font-size: 3vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: rgb(233, 0, 47);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.header-content h3{
+    font-size: 2vmin;
+    margin-bottom: 20px;
+}
+
+.header-content p{
+    max-width:850px ;
+    margin-bottom: 30px;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(41, 37, 80);
+}
+.line1{
+    width: 100px;
+    height: 4px;
+    background: rgb(233, 0, 47);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+.heart-btn{
+    transform: translate(-15%,-15%);
+    margin-left: 50px;
+  }
+  .content{
+    padding: 8px 0px;
+    display: flex;
+    border: 2px solid #eae2e1;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .content.heart-active{
+    border-color: #f9b9c4;
+    background: #fbd0d8;
+  }
+  .heart{
+    position: absolute;
+    background: url("https://code.5g-o.com/wp-content/uploads/2020/03/img.png") no-repeat;
+    background-position: left;
+    background-size: 2900%;
+    height: 80px;
+    width: 80px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .text{
+    font-size: 21px;
+    margin-left: 45px;
+    color: grey;
+  }
+  .numb:before{
+    content: '1';
+    font-size: 21px;
+    font-weight: 600;
+    color: #9C9496;
+  }
+  .numb.heart-active:before{
+    content: '2';
+    color: #000;
+  }
+  .text.heart-active{
+    color: #000;
+  }
+  .heart.heart-active{
+    animation: animate .8s steps(28) 1;
+    background-position: right;
+  }
+  @keyframes animate {
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: right;
+    }
+  }
+
+
+.row .col img{
+    max-width: 70%;
+}
+.col p{
+    
+    color:rgb(105, 105, 105) ;
+    padding: 0px 40px;
+}
+.events .row{
+    margin-top: 50px;
+}
+.events .ctn{
+    margin-top: 30px;
+}
+h4{
+    font-size: 3vmin;
+    color: rgb(41, 37, 80);
+    margin: 20px auto;
+}
+
+.content-col{
+    width: 40%;
+    margin-right: 50px;
+}
+.image-col{
+    width: 60%;
+}
+.image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image-gallery img{
+    width: 200px;
+    margin: 10px;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: rgb(41, 37, 80);
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+}
+
+img{
+    transition: transform 0.3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.ctn:hover{
+    background: rgb(64, 61, 94);
+}
+
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color:rgb(64, 61, 94) ;
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+
+
+
+@media only screen and (max-width:1279px){
+    .image-gallery img{
+        width: 45%;
+    }
+    .content-col{
+        margin-left: 0px;
+    }
+    .contrast{
+        margin: 30px auto;
+    }
+}
+    
+
+
+
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+        z-index: 3;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .contrast{
+        margin: 30px auto;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        z-index: 3;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+        z-index: 2;
+    }
+    .nav-links li {
+        margin: 30px auto;
+        
+    }
+    .header-content p{
+        margin: 30px 80px;
+        z-index: 1;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .col img{
+        width: 90%;
+    }
+    .tours .col{
+        width: 100%;
+    }
+    .image-gallery{
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img{
+        height: 80%;
+    }
+    span .lang{
+        top: 65%;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
+
+

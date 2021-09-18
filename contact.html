@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html"><img src="image/logo.png" alt=""></a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about me.html">About me</a></li>
+            <li class="ctn"><a href="contact.html">Contact</a></li>
+            <span>
+                <b>EN▼</b>
+                <ul class="lang">
+                    <li><a href="contact.html">EN</a> </li>
+                    <li><a href="contact cn.html">中</a></li>
+                </ul>
+            </span>
+            <div class="contrast"><a href="contact h.html"><img src="image/outline_settings_brightness_black_36dp.png" alt=""></a></div>
+
+        </ul>
+        <img src="image/menu.png" alt="" class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="right">
+                        <h2>Let's Talk</h2>
+                        <div class="line"></div>
+                        <input type="text" class="field" placeholder="Your Name">
+                        <input type="email" class="field" placeholder="Your Email">
+                        <textarea class="field area" placeholder="Message"></textarea>
+                    </div>
+                </div>
+
+            </div>
+            <a href="contact.html" class="ctn">Send</a>
+        </div>
+    </header>
+
+    <section class="footer">
+        <p>via nuova n. 14 54033, Carrara Massa, Toscana IT , liuzhidi1997@gmail.com , +39 3465927726</p>
+        <p>2021 Client . All Rights Reserved | Design By Liu Zhidi</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks =document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        }
+    )
+    </script>
+</body>
+</html>
+        

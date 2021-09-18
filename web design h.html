@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <link rel="stylesheet" href="web design h.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="about me h.html">◀Back</a></div>
+        <ul class="nav-links">
+            <li><a href="index h.html">Home</a></li>
+            <li class="active"><a href="about me h.html" style="color: crimson;">About me</a></li>
+            <li class="ctn"><a href="contact h.html">Contact</a></li>
+            <span>
+                <b style="color: whitesmoke;">EN▼</b>
+                <ul class="lang">
+                    <li><a href="web design h.html">EN</a> </li>
+                    <li><a href="web design cn h.html">中</a></li>
+                </ul>
+            </span>
+            <div class="contrast"><a href="web design.html"><img src="image/白对比度.png" alt=""></a></div>
+
+        </ul>
+        <img src="image/menu.png" alt="" class="menu-btn">
+    </nav>
+
+    <section class="events">
+        <div class="title">
+            <h1>Design ideas</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>The use of headphones with lighting on as a home page banner attracts a consumer groups and also reflects the high-end image of corporate products. The overall interface has been changed a lot based on the original website, concise and elegant . The overall color scheme combines the brand logo color match, More recognizable and uniform, orange also makes the whole page more dynamic.</p>
+                <img src="image/首页.png" alt="">
+            </div>
+        </div>
+        <div class="title">
+            <h1>Application demo</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="image/xiaoguo.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="footer">
+        <p>via nuova n. 14 54033, Carrara Massa, Toscana IT , liuzhidi1997@gmail.com , +39 3465927726</p>
+        <p>2021 Client . All Rights Reserved | Design By Liu Zhidi</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks =document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        }
+    )
+    </script>
+</body>
+</html>
+        

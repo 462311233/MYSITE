@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foto</title>
+    <link rel="stylesheet" href="foto.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="about me.html">◀Back</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about me.html" style="color: crimson;">About me</a></li>
+            <li class="ctn"><a href="contact.html">Contact</a></li>
+            <span>
+                <b style="color: whitesmoke;">EN▼</b>
+                <ul class="lang">
+                    <li><a href="foto.html">EN</a> </li>
+                    <li><a href="foto cn.html">中</a></li>
+                </ul>
+            </span>
+            <div class="contrast"><a href="foto h.html"><img src="image/白对比度.png" alt=""></a></div>
+
+        </ul>
+        <img src="image/menu.png" alt="" class="menu-btn">
+    </nav>
+
+    <section class="events">
+        <div class="title">
+            <h1>Featured photos</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="image/IMG_20180817_115244.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="image/IMG_20180819_132417.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="image/IMG_20180817_155456.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="image/IMG_20180818_173926.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="image/IMG_20180817_123901.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="image/IMG_20180817_123813.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="image/20180220_201317.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="image/20180220_201928.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="image/20180218_190357.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="image/20180219_132535.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="image/20180220_174435.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="image/20180221_224816.jpg" alt="">
+            </div>
+        </div>
+    </section>
+       
+
+    <section class="footer">
+        <p>via nuova n. 14 54033, Carrara Massa, Toscana IT , liuzhidi1997@gmail.com , +39 3465927726</p>
+        <p>2021 Client . All Rights Reserved | Design By Liu Zhidi</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks =document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        }
+    )
+    </script>
+</body>
+</html>
+        

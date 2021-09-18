@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{
+    margin-left: 30px;
+    margin-right: 20px;
+    cursor: default;
+}
+span b{
+    font-size: 18px;
+    font-weight: 500;
+
+}
+span .lang{
+    display: none;
+    position: absolute;
+    top: 60%;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+span:hover .lang{
+    display: block;
+}
+span .lang li{
+    width: 80%;
+    height: 30px;
+    display: flex;
+}
+span .lang a{
+    color: whitesmoke;
+}
+span .lang a:hover{
+    color: black;
+}
+span .lang li:hover{
+    background-color: rgb(73, 52, 90);
+    color: whitesmoke;
+}
+.contrast{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.navbar{
+    background-color: black;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+    font-weight: 500;
+    z-index: 2;
+}
+
+ul{
+    list-style: none;
+}
+
+.active{
+    color: rgb(233, 0, 47);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 30px;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: rgb(233, 0, 47);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(image/黑白背景.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.header-content{
+    margin-bottom: 100px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 3vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: rgb(233, 0, 47);
+    margin: 10px auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+}
+
+.content-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.field{
+    width: 70%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.field:hover{
+    border: 2px solid rgb(37, 49, 223);
+    border-radius: 8px;
+}
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+.area{
+    min-height: 200px;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.footer{
+    border-top: whitesmoke solid 2px;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color:black ;
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+img{
+    transition: transform 0.3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.ctn:hover{
+    background: rgb(64, 61, 94);
+}
+
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .contrast{
+        margin: 30px auto;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+        
+    }
+    .field{
+        min-width: 200px;
+        margin: 30px auto;
+        padding: 0.1rem 3rem;
+        text-align: center;
+    }
+    span .lang{
+        top: 65%;
+    }
+
+    .footer{
+        padding: 10px;
+    }
+}
+
+
