@@ -136,7 +136,7 @@ a {
 }
 
 .header-content h3{
-    font-size: 2vmin;
+    font-size: 2.5vmin;
     margin-bottom: 30px;
 }
 
@@ -173,6 +173,7 @@ img:hover{
 }
 
 @media only screen and (max-width:850px){
+    
     .menu-btn{
         display: block;
     }
@@ -206,6 +207,9 @@ img:hover{
     }
     span .lang{
         top: 65%;
+    }
+    .header-content{
+        margin-bottom: 300px;
     }
     .footer{
         padding: 10px;

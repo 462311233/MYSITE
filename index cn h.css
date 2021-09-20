@@ -131,7 +131,7 @@ a {
 }
 
 .header-content h3{
-    font-size: 2vmin;
+    font-size: 2.5vmin;
     margin-bottom: 30px;
 }
 
@@ -187,6 +187,9 @@ img:hover{
         background: #484872;
         margin-top: -900px;
         transition: all 0.5s ease;
+    }
+    .header-content{
+        margin-bottom: 300px;
     }
     .mobile-menu{
         margin-top: 0px;

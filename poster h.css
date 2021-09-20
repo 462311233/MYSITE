@@ -182,6 +182,9 @@ img:hover{
 }
 
 @media only screen and (max-width:850px){
+    .row .col img{
+        width: 100%;
+    }
     .menu-btn{
         display: block;
     }
