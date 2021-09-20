@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 span{
     margin-left: 30px;
@@ -45,6 +46,7 @@ span .lang li:hover{
     margin-left: 15px;
 }
 .navbar{
+    max-height: 87px;
     display: flex;
     position: absolute;
     top: 0;
@@ -53,7 +55,7 @@ span .lang li:hover{
     justify-content: space-between;
     padding: 20px;
     color: black;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 ul{
@@ -82,12 +84,13 @@ body , html{
     background: rgb(233, 0, 47);
     border-radius: 30px;
     color: whitesmoke;
+    
 }
 
 header{
     width: 100vw;
     height: 100vh;
-    background-image: url(image/IMG_20180817_115244.jpg);
+    background-image: url(image/IMG_20180817_1152444.png);
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -97,12 +100,12 @@ header{
 
 a {
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
 }
 
 .header-content{
     margin-bottom: 150px;
-    color: whitesmoke;
+    color: white;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -133,7 +136,7 @@ a {
 }
 
 .header-content p{
-    max-width:850px ;
+    max-width:860px ;
     margin-bottom: 30px;
 }
 
@@ -176,7 +179,7 @@ section{
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
-.heart-btn{
+  .heart-btn{
     transform: translate(-15%,-15%);
     margin-left: 50px;
   }
@@ -233,11 +236,12 @@ section{
   }
 
 
+
 .row .col img{
     max-width: 70%;
 }
 .col p{
-    
+    font-size: 2vmin;
     color:rgb(105, 105, 105) ;
     padding: 0px 40px;
 }
@@ -269,6 +273,7 @@ h4{
 }
 
 
+
 .image-gallery img{
     width: 200px;
     margin: 10px;
@@ -285,10 +290,10 @@ h4{
     margin: 30px auto;
 }
 
-img{
+.image-gallery img{
     transition: transform 0.3s ease;
 }
-img:hover{
+.image-gallery img:hover{
     transform: scale(1.1);
 }
 .ctn:hover{
@@ -327,6 +332,7 @@ img:hover{
 
 
 @media only screen and (max-width:850px){
+    
     .menu-btn{
         display: block;
         z-index: 3;
@@ -361,8 +367,12 @@ img:hover{
         margin: 30px auto;
         
     }
+    .header-content{
+        margin-bottom: 200px;
+    }
     .header-content p{
-        margin: 30px 80px;
+        margin: 30px 30px;
+        
         z-index: 1;
     }
     .row{

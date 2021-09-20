@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body{
@@ -28,7 +29,7 @@ body{
 }
 .contrast{
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 ul{
     list-style: none;
