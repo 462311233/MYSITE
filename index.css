@@ -118,9 +118,7 @@ a {
     text-align: center;
 }
 
-.header-content h2{
-    font-size: 3vmin;
-}
+
 
 .line{
     width: 150px;
@@ -173,7 +171,9 @@ img:hover{
 }
 
 @media only screen and (max-width:850px){
-    
+    .header-content h2{
+        font-size: 16px;
+    }
     .menu-btn{
         display: block;
     }
@@ -191,7 +191,7 @@ img:hover{
         height: 100vh;
         justify-content: center;
         background: #484872;
-        margin-top: -900px;
+        margin-top: -1200px;
         transition: all 0.5s ease;
     }
     .mobile-menu{
@@ -209,7 +209,7 @@ img:hover{
         top: 65%;
     }
     .header-content{
-        margin-bottom: 300px;
+        margin-bottom: 200px;
     }
     .footer{
         padding: 10px;

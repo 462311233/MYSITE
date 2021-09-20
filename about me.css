@@ -355,7 +355,7 @@ h4{
         height: 100vh;
         justify-content: center;
         background: #484872;
-        margin-top: -900px;
+        margin-top: -1200px;
         transition: all 0.5s ease;
     }
     .mobile-menu{
@@ -372,7 +372,7 @@ h4{
     }
     .header-content p{
         margin: 30px 30px;
-        
+        font-size: 10px;
         z-index: 1;
     }
     .row{
