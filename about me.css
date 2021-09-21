@@ -290,10 +290,10 @@ h4{
     margin: 30px auto;
 }
 
-.image-gallery img{
+img{
     transition: transform 0.3s ease;
 }
-.image-gallery img:hover{
+img:hover{
     transform: scale(1.1);
 }
 .ctn:hover{
